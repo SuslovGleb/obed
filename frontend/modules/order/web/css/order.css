@@ -1,0 +1,894 @@
+#basket_detail .modal-content
+{
+    min-height: unset!important;
+}
+.basket {
+    padding: 8px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    /* margin-left: 1px; */
+    padding-left: 9px;
+    margin-top: 6px;
+    border-radius: 50%;
+    width: 57px;
+    cursor:pointer;
+}
+.basket_box:hover .basket {
+    /*background-color: #1b890a;*/
+    /* border-radius: 50%; */
+    /* width: 57px; */
+}
+.basket_box {
+    cursor: pointer;
+    margin-top: 6px;
+    width: 66px;
+    float: right;
+    margin-right: 19px;
+}
+.basket_count {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    bottom: 29px;
+    /* left: 10px; */
+    margin-left: 51px;
+    border-radius: 50%;
+    color: white;
+    line-height: 26px;
+    /* padding-left: 5px; */
+    text-align: center;
+}
+.input-group.dishBuyCount.table {
+    position: unset;
+}
+#basket_detail {
+    /*max-height: 500px;*/
+    /*overflow: overlay;*/
+    /*display: none;*/
+    /*cursor: initial;*/
+    /*width: 980px;*/
+    /*!* height: 640px; *!*/
+    /*position: fixed;*/
+    /*background-color: #d6ffd1;*/
+    /*margin-top: 70px;*/
+    /*!* left: 100px; *!*/
+    /*margin-left: 20px;*/
+    /*padding: 20px;*/
+    /*!* background-color: white; *!*/
+    /*border-radius: 40px;*/
+    /*box-shadow: 0px 0px 0px 4px #2e8806;*/
+    z-index: 111;
+}
+.detailTitle {
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+.closeBasket {
+    float: right;
+    font-size: 16pt;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor:pointer;
+}
+.closeBasket:hover {
+    color:#2e8806;
+}
+table.order_table tr:nth-child(even) {
+    background-color: #000000a1;
+    color: wheat;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff33;
+}
+table.order_table tr:nth-child(odd) {
+    background-color: #ffffff7a;
+    background-color: #000000a1;
+    color: wheat;
+    font-weight: bold;
+    border-bottom: 1px dotted white;
+    /* font-size: 29pt; */
+    border-bottom: 1px dotted white;
+    border-bottom: 1px solid #ffffff33;
+}
+table.order_table td.name
+{
+    width: 600px;
+    text-align: left;
+}
+table.order_table {
+    border: 1px solid #793333;
+    moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.7em auto;
+    width: 96%;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.clienAddIco {
+    float: right;
+    cursor: pointer;
+    /*margin-left: 351px;*/
+}
+.removeDishFromCart {
+    display: none;
+    width: 25px;
+    height: 25px;
+    background-color: #730a0a;
+    position: absolute;
+    border-radius: 50%;
+    color: #e2d176;
+    /* top: 25px; */
+    padding: 5px;
+    margin: auto;
+    top: 0px;
+    /* left: 0; */
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 11pt;
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: 1;
+    background-color: #251300e3;
+}
+.detailControl .btnAddDish {
+    float: right;
+}
+
+.detailControl .btnClearCart {
+    font-size: 12pt;
+    padding: 6px;
+    /*background-color: #c9ca3f;*/
+    border: none;
+    margin-left: 3px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+    color: #676519!important;
+    outline: none!important;
+    float: left;
+}
+.orderInfoBox.inactive
+{
+    display: none;
+}
+.orderTotalSum {
+    /* float: right; */
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: -31.5px;
+}
+.detailInfo {
+    /*float: left;*/
+    /* position: absolute; */
+    /* margin-top: -30px; */
+    font-size: 13pt;
+    width: 540px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.detailInfo span {
+    font-weight: normal;
+    float: left;
+    margin-right: 13px;
+    line-height: 30px;
+}
+.orderInfoValue {
+    margin-left: 200px;
+    /* font-weight: bold; */
+    text-align: left;
+    line-height: 50px;
+}
+.orderInfoBox .cart:last-child
+{
+    border-bottom: none;
+}
+.orderInfoValue .formSelectBox {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.formInputBox .divBtn.glyphicon.inpToSelectBtn.firmInput.glyphicon-ok {
+    margin-top: 5px;
+}
+.orderInfoValue span.glyphicon.form-control-feedback.glyphicon-ok {
+    /* float: left; */
+    position: absolute;
+    left: -8px;
+    top: -1px;
+}
+.orderInfoValue .formInputBox {
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+.orderInfoBox .cart
+{
+    border-bottom: 1px solid #604215;
+    /* padding: 9px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 60px;
+}
+.orderInfoBox
+{
+    padding: 0 15px 0 15px!important;
+
+    line-height: 41px;
+    margin-bottom: 20px!important;
+    float: none!important;
+    /* margin-right: 100%; */
+    display: inline-block;
+
+
+}
+
+.time.inputMain {
+    width: 70px;
+    padding-right: 12px!important;
+}
+.orderInfoLabel
+{
+    font-weight: bold;
+    float: left;
+    margin-right: 15px;
+    line-height: 50px;
+}
+table.order_table th {
+    text-align: center;
+    background-color: #000000ab;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px black;
+    /* font-size: 10pt; */
+    font-size: 14pt;
+}
+table.order_table td, th {
+
+    max-width: 614px;
+    padding: 5px;
+    /*border: 1px solid #2e8806;*/
+}
+table.order_table tr:hover td .removeDishFromCart {
+    display: block;
+}
+
+
+table.order_table td {
+    font-size: 15pt;
+    position: relative;
+}
+#basket
+{
+    width: 200px;
+    /* left: 80%; */
+    /* margin-bottom: 100px; */
+    /* position: absolute; */
+    text-align: center;
+    cursor: pointer;
+    z-index: 100000;
+    float: left;
+}
+.detailTitleNotOrder {
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+#detailTable
+{
+    overflow-x: hidden;
+    max-height:300px;
+}
+#basket_detail.active .detailTitleNotOrder
+{
+    display: none;
+}
+#basket_detail.active .detailTitle
+{
+    display: block;
+}
+#basket_detail.active #detailTable
+{
+    display: block;
+}
+#basket_detail.inactive .order_table
+{
+    display: block;
+}
+#basket_detail.active .orderTotalSum
+{
+    display: block;
+}
+#basket_detail.active .orderTotalSum
+{
+    display: block;
+}
+#basket_detail.active .detailInfo
+{
+    display: block;
+}
+#basket_detail.active .detailControl
+{
+    display: block;
+}
+
+#basket_detail.inactive .detailTitleNotOrder
+{
+    display: block;
+}
+#basket_detail.inactive .detailTitle
+{
+    display: none;
+}
+#basket_detail.inactive #detailTable
+{
+    display: none;
+}
+#basket_detail.inactive .order_table
+{
+    display: none;
+}
+#basket_detail.inactive .orderTotalSum
+{
+    display: none;
+}
+#basket_detail.inactive .orderTotalSum
+{
+    display: none;
+}
+#basket_detail.inactive .detailInfo
+{
+    display: none;
+}
+#basket_detail.inactive .detailControl
+{
+    display: none;
+}
+.btnAddClient {
+    font-size: 12pt;
+    padding: 6px;
+    background-color: #1d8a00;
+    border: none;
+    margin-left: 3px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+    color: white!important;
+    outline: none!important;
+    float: right;
+}
+.addClientBox{
+    float: left;
+    display: none;
+}
+.clientAddr {
+    float: left;
+
+}
+.addClientBoxTitle {
+    color: #0e6116;
+    position: absolute;
+    /* top: 0; */
+    margin-top: -20px;
+    margin-left: -5px;
+    font-size: 10pt;
+}
+.printAll {
+    /* float: right; */
+    width: 100%;
+    /* margin-bottom: 5px; */
+}
+.addingBox {
+    display: block;
+    /* width: 600px; */
+    width: 63%;
+    /* border: 1px solid #0e6116; */
+    border-radius: 10px;
+    padding: 10px;
+    /* min-width: 265px; */
+    padding-top: 20px;
+    float: left;
+    /* margin-bottom: 44px; */
+    /* margin-left: 5px; */
+    box-shadow: 0px 0px 18px 0px #00000070;
+    /* width: 100%; */
+    background-color: #867854;
+    color: #2b1a00;
+    font-size: 12pt;
+    font-family: 'Roboto',sans-serif;
+    text-shadow: none;
+    margin: 0 auto;
+}
+
+.orderInfoBox input {
+    padding-right: 0!important;
+}
+.search[name='clientChoose']
+{
+    width: 100px;
+}
+.chooseClientBox span.glyphicon.glyphicon-search {
+    margin-top: 4px;
+    padding-left: 6px;
+    background-color: #60a967;
+    border-radius: 0 5px 5px 0;
+    height: 34px;
+    padding-top: 3px;
+    padding-right: 7px;
+}
+.chooseClientBox input.search {
+    padding-right: 0!important;
+    width: 200px;
+}
+input.inputMain {
+    /* width: 100%; */
+    border: 1px solid #60a967;
+    /* border-radius: 5px; */
+    /* padding: 5px; */
+    margin-top: 5px;
+    /* float: left; */
+    color: #0e6116;
+    padding-right: 28.5px!important;
+}
+textarea.inputMain {
+    width: 243px;
+    border: 1px solid #60a967;
+    /* border-radius: 5px; */
+    /* padding: 5px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* float: left; */
+    color: #0e6116;
+    display: block;
+    height: 66px;
+}
+.addrComment{
+    float: left;
+}
+.clienTelephone{
+
+}
+.clientFirm{
+
+}
+.firmSphere{
+    float: left;
+    width: 95%;
+}
+.clientChoose{
+    float: left;
+}
+.search_result {
+    width: 387px;
+    font-size: 10pt;
+    height: 100px;
+    background-color: #ffffffe0;
+    border-radius: 20px;
+    position: absolute;
+    padding: 13px;
+    overflow-y: scroll;
+    display: none;
+    z-index: 3;
+}
+.search_result li
+{
+    cursor: pointer;
+}
+.search_result li:hover
+{
+    background-color: grey;
+}
+.search_result li.selected
+{
+    background-color: grey;
+}
+.form-horizontal .form-group {
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+    margin: 0;
+}
+span.glyphicon.form-control-feedback {
+    right: -15px!important;
+    top: 8px;
+}
+/*span.glyphicon.form-control-feedback {*/
+/*right: 0!important;*/
+/*top: 5px;*/
+/*}*/
+.cart .search {
+    border-radius: 5px!important;
+}
+.ui-widget-content {
+    max-width: 500px;
+    color: #222222;
+    overflow: overlay;
+    max-height: 164px;
+    padding: 0;
+    overflow-x: hidden;
+    position: fixed;
+    border-radius: 10px;
+    border: 1px solid #0e6116;
+}
+li.ui-menu-item
+{
+    margin-bottom: 5px;
+    border: none;
+}
+.ui-menu .ui-menu-item
+{
+    border: none!important;
+    float: left!important;
+    /*z-index: 111;*/
+    background-image: none!important;
+    width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+.addClientInputs input {
+    max-width: 100%;
+    float: left;
+    margin: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.addClientInputs {
+    width: 405px;
+    display: none;
+    /* float: left; */
+    margin: 0 auto;
+}
+.addClientInputs .form-control-feedback {
+    position: relative;
+    float: right;
+    margin-top: -52px;
+}
+.ui-autocomplete
+{
+    z-index: 111!important;
+}
+
+.ui-state-focus, .ui-widget-content .ui-state-focus {
+    /* background: none!important; */
+    border: none!important;
+    float: left!important;
+    background-color: #97f179!important;
+    background-image: none!important;
+    width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+.li_search_addrr
+{
+    float: left;
+}
+.client_data_box
+{
+    padding: 8px;
+    /*float: left;*/
+}
+.li_search_name {
+    font-size: 10pt;
+    float: left;
+}
+.li_search_tel {
+    /*float: right;*/
+}
+.chooseClientBox .input-group {
+    float: left;
+}
+.inactive
+{
+    display: none;
+}
+select.addressSelect {
+    width: 185px;
+    /* border-right: 1px solid black; */
+    float: left;
+}
+.divBtn {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: #2e8806;
+    /*margin-left: 10px;*/
+    border-radius: 30px;
+    line-height: 29px;
+    font-size: 20px;
+    text-align: center;
+    color: #a5ff86;
+    margin-top: 2px;
+    cursor: pointer;
+    padding-left: 1px;
+    margin-left: 16px;
+    margin-right: -30px;
+}
+.divBtn:hover
+{
+    background-color: #87881b;
+}
+.divBtn:active
+{
+    background-color: #295b88;
+}
+.firmAddress {
+    float: left;
+    margin-top: 5px;
+    width: 95%;
+    margin-bottom: 5px;
+}
+select.addressSelect {
+    width: 95%;
+    margin-right: 20px;
+}
+input.address {
+    width: 95%;
+    margin-right: 20px;
+    float: left;
+}
+.detailControl {
+    width: 100%;
+    float: left;
+}
+.modal-backdrop
+{
+    z-index: 10;
+}
+.modal-content {
+
+    width: 1000px;
+}
+.modal.in .modal-dialog {
+
+    width: 1000px;
+}
+.modal-header {
+    /*height: 50px;*/
+    padding: 0;
+    padding-bottom: 25px;
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+    padding-bottom: 40px;
+    /* margin-bottom: 20px; */
+    /* background-color: #ffffff73; */
+    background-color: rgba(82, 63, 12, 0.7);
+}
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    background-color: rgba(89, 58, 11, 0.96);
+}
+.modal-header .close {
+    margin-top: 0;
+    opacity: 1;
+    margin-right: 0;
+    padding: 4px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #bdab5b;
+    color: #6f1818;
+    text-shadow: none;
+    /* box-shadow: inset 0px 0px 1px 1px black; */
+    outline: none!important;
+}
+table .dishBtnPlus
+{
+    height: 34px;
+    /* width: 34px; */
+    padding: 0;
+    color: wheat;
+    /* background-color: #214d18; */
+    border: none;
+    /* height: 34px; */
+    width: 22px;
+    /* padding: 0; */
+    /*color: black;*/
+    background-color: #d8c71c00;
+    /* border: none; */
+    font-size: 12pt;
+    border-radius: 0 50% 50% 0;
+    outline: none!important;
+}
+table .dishBtnMinus
+{
+    height: 34px;
+    width: 22px;
+    padding: 0;
+    color: wheat;
+    background-color: #d8c71c00;
+    border: none;
+    font-size: 12pt;
+    border-radius: 50% 0 0 50%;
+    outline: none!important;
+    z-index: 1;
+}
+table .dishInputNum {
+    background-color: #ffffff00;
+    color: wheat;
+    font-size: 15pt;
+}
+table .dishBtnMinus .btn:hover, .btn:focus, .btn.focus {
+    color: #cab78f;
+    text-decoration: none;
+}table .dishBtnPlus .btn:hover, .btn:focus, .btn.focus {
+     color: #cab78f;
+     text-decoration: none;
+ }
+.formInputBox input {
+    width: 90%;
+    float: left;
+    margin-right: 20px;
+}
+.formSelectBox select {
+    width: 90%;
+    float: left;
+    margin-right: 20px;
+}
+.formInputBox .popover-content {
+    color: black;
+}
+.print.orderPrintContain.driveRight {
+    right: -450px;
+}
+.ordersPrintBox {
+    overflow: overlay;
+    max-height: 467px;
+}
+.print.orderPrintContain {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 500px;
+    height: 500px;
+    z-index: 10;
+    font-family: sans-serif;
+    /* overflow: overlay; */
+    transition: all 1s ease;
+}
+.ordersPrintBox .date{
+
+    right: 20px;
+    float: right;
+}
+
+.print.orderPrintContain .order {
+    width: 451px;
+    padding: 15px;
+    background-color: gainsboro;
+    margin: 10px;
+    margin-left: 30px;
+    box-shadow: 0px 0px 0px 10px #336456;
+}
+.toggleOrders {
+    position: absolute;
+    height: 500px;
+    line-height: 500px;
+    width: 25px;
+    background-color: black;
+    color: wheat;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: -1px;
+}
+.choseAddingOrder .btn {
+    /* color: #d6d6d6; */
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.choseAddingOrder {
+    /* position: absolute; */
+    /* background-color: white; */
+    float: right;
+    /* color: black; */
+}
+.client input {
+    margin-top: 7px;
+}
+.orderInfoBox.addingBox.client {
+    width: 50%;
+}
+.addingBox span.glyphicon.form-control-feedback.glyphicon-ok {
+    /* position: unset!important; */
+    left: unset!important;
+    top: 6px!important;
+
+    right: 0!important;
+}
+.findClientBox tr.day.clientRow :last-child{
+    background-color: #8dff84;
+}
+.findClientBox tr.week.clientRow :last-child{
+    background-color: #edff84;
+}
+.findClientBox tr.moreWeek.clientRow :last-child{
+    background-color: #ff8484;
+}
+span.telB {
+    background-color: #00000005!important;
+    font-size: 18px;
+    /* text-decoration: underline; */
+    /* color: #0ade00; */
+    /* text-shadow: 1px 1px 1px black; */
+}span.telE {
+    background-color: #ffacac!important;
+    font-size: 20px;
+}
+ .findClientBox table
+ {
+     background-color: whitesmoke;
+     text-align: center;
+     font-size: 15px;
+     font-family: 'Roboto', sans-serif;
+ }
+table.clients{
+
+    width:  100%;
+    text-align:   center;
+    background-color:  wheat;
+    font-size:  12pt;
+    font-family:  sans-serif;
+    /* text-shadow:  1px 1px 1px white; */
+    font-weight:  bold;
+
+}
+.sumByDay
+{
+    width: 100%;
+    height: 35px;
+    background-color: green;
+    text-align: center;
+    color: white;
+    line-height: 35px;
+}
+/*table.clients th*/
+/*{*/
+    /*background-color: #00b3ee;*/
+    /*text-align: center;*/
+/*}*/
+.findClientBox tr.clientRow {
+    cursor: pointer;
+}
+.findClientBox tr.clientRow:hover {
+    background-color: #00b3ee!important;
+}
+
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#order_infoModal .dishBuyCount {
+    bottom: 0;
+
+    left: 20px;
+}
+#order_infoModal .btn-number {
+    display: none;
+}
+select.officeRoom {
+    width: 27%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    padding-right: 0!important;
+}
+input.clientAddrComm.AddrComm.form-control {
+    width: 60%;
+    margin-left: 12px;
+}

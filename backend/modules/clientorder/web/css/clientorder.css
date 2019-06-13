@@ -1,0 +1,485 @@
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+@media print {
+
+    table.order_table th {
+        background-color: #000000ab !important;
+        color: #ffffff !important;
+        text-shadow: 1px 1px 0px black !important;
+    }
+    #slogan h2{
+        font-size: 39pt!important;
+        color: #f9ba00 !important;
+        text-shadow: 2px 2px 2px black!important;
+    }#slogan h1{
+        font-size: 25pt!important;
+        color: #f9ba00 !important;
+        text-shadow: 2px 2px 2px black!important;
+             padding-left: 137px;
+    }
+
+
+
+    .flyerDay .dayName {
+        position: absolute;
+        /* margin: 0 auto; */
+        margin-left: 14cm;
+        font-size: 60pt;
+        margin-top: 17cm;
+        color: #8e8e8e85;
+        z-index: 1;
+        /* bottom: 0; */
+    }
+
+    .printContain .order
+    {
+        width: 100%;
+        page-break-after: always;
+
+    }
+    a[href]:after {
+        content: "";
+    }
+    input.form-control.input-number.dishInputNum {
+        font-size: 12pt;
+    }
+
+    .printContain .disorderTable:last-child
+    {
+        width: 100%;
+        page-break-after: auto;
+    }
+    td.dishType {
+        background-color: darkseagreen!important;
+    }
+    .wrap > .container {
+        /*padding: 0;*/
+        padding-top: 0px;
+    }
+    /*.print{*/
+    /*display: initial;*/
+    /*}*/
+    .disorderActions {
+        display: none!important;
+        visibility: hidden!important;
+    } .btn-number {
+          display: none!important;
+          visibility: hidden!important;
+      }
+    footer.footer{
+        display: none!important;
+        visibility: hidden!important;
+    }
+    div#yii-debug-toolbar {
+        display: none!important;
+        visibility: hidden!important;
+    }div.btn {
+        display: none!important;
+        visibility: hidden!important;
+    }a.printDishorder {
+        display: none!important;
+        visibility: hidden!important;
+    }
+    .print:not{
+        display: none!important;
+        visibility: hidden!important;
+    }
+}
+
+#slogan h2{
+    font-size: 39pt;
+    color: #f9ba00 !important;
+    text-shadow: 2px 2px 2px black!important;
+}#slogan h1{
+     font-size: 32pt;
+     color: #f9ba00 !important;
+     text-shadow: 2px 2px 2px black!important;
+     padding-left: 137px;
+ }
+a.collapse-toggle {
+    height: 50px;
+    width: 100%;
+    float: left;
+    line-height: 50px;
+    text-decoration: none;
+}
+.panel.panel-default {
+    /* margin-bottom: 5px; */
+    float: left;
+    width: 100%;
+}
+.panel-heading {
+    float: left;
+    width: 100%;
+}
+
+table.order_table td.name
+{
+    width: 600px;
+    text-align: left;
+}
+table.order_table {
+    /* border: 1px solid #793333; */
+    moz-border-radius: 10px;
+    /* -webkit-border-radius: 10px; */
+    -khtml-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    margin: 0.7em auto;
+    /* width: 96%; */
+    text-align: center;
+    /* border-radius: 10px; */
+    /* -webkit-border-radius: 10px; */
+}
+table.order_table th {
+    text-align: center;
+    background-color: #000000ab;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px black;
+    /* font-size: 10pt; */
+    /* font-size: 14pt; */
+}
+table.order_table td, th {
+
+    max-width: 614px;
+    padding: 5px;
+    /*border: 1px solid #2e8806;*/
+}
+table.order_table tr:hover td .removeDishFromCart {
+    display: block;
+}
+
+
+table.order_table td {
+    /*font-size: 15pt;*/
+    position: relative;
+    border: 1px solid #c5c5c5;
+}
+table .dishBtnPlus
+{
+    height: 34px;
+    /* width: 34px; */
+    padding: 0;
+    color: wheat;
+    /* background-color: #214d18; */
+    border: none;
+    /* height: 34px; */
+    width: 22px;
+    /* padding: 0; */
+    /*color: black;*/
+    background-color: #d8c71c00;
+    /* border: none; */
+    font-size: 12pt;
+    border-radius: 0 50% 50% 0;
+    outline: none!important;
+}
+table .dishBtnMinus
+{
+    height: 34px;
+    width: 22px;
+    padding: 0;
+    color: wheat;
+    background-color: #d8c71c00;
+    border: none;
+    font-size: 12pt;
+    border-radius: 50% 0 0 50%;
+    outline: none!important;
+    z-index: 1;
+}
+table .dishInputNum {
+    background-color: #ffffff00;
+    color: wheat;
+    font-size: 15pt;
+}
+table .dishBtnMinus .btn:hover, .btn:focus, .btn.focus {
+    color: #cab78f;
+    text-decoration: none;
+}table .dishBtnPlus .btn:hover, .btn:focus, .btn.focus {
+     color: #cab78f;
+     text-decoration: none;
+ }
+
+.orderTotalSum {
+    /* float: right; */
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: right;
+    /* margin-bottom: -31.5px; */
+    /* margin: 0 auto; */
+}
+
+.flyerRow {
+    width: 33.33%;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: left;
+    text-transform: lowercase;
+    background-color:#ffffffc7!important;
+    padding-top: 25px;
+
+    box-shadow: 0px 0px 1px 1px #ffa583!important;
+}
+.flyerDay {
+    height: 209.5mm;
+    width: 297mm;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    /* padding: 5mm; */
+    page-break-after: always;
+}
+.flyerRow .typeName {
+    color: #965600!important;
+    text-align: center;
+    float: left;
+    /* width: 90%; */
+    font-weight: bold;
+    text-transform: uppercase;
+    /* margin-left: 10%; */
+    /* margin-left: 62px; */
+    width: 100%;
+}.flyerRow .type {
+     float: left;
+     margin-bottom: 3px;
+ }
+.flyerRow .products {
+    font-size: 10px;
+    float: left;
+    /* margin-top: 5px; */
+    /* line-height: 20px; */
+    width: 100%;
+}
+.flyerRow .dish {
+     /*float: left;*/
+}.flyerRow .dish .dishName:first-letter  {
+     text-transform: uppercase;
+}
+.flyerRow .dishBox {
+    float: left;
+    width: 100%;
+    /* margin-left: 10%; */
+}.flyerRow .dishNum {
+     float: left;
+}
+.flyerRow .dish .dishName
+{
+    width: 66%;
+    float: left;
+    /* color: red!important; */
+    /* font-weight: bold; */
+    text-shadow: 1px 1px #e48300!important;
+}.flyerRow .dish .dishCost
+{
+    float: right;
+    
+     width: 73px;
+}
+/*.flyerRow .dishBox:nth-child(odd) {*/
+     /*float: right;*/
+    /*width: 50%;*/
+/*}*/
+.flyerRow  .dishline {
+    float: left;
+}
+.flyerRow .complexName {
+    float: left;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.flyerRow .complexNameBox {
+    float: left;
+    width: 100%;
+}.flyerRow .complexPrice {
+     float: right;
+     font-weight: bold;
+ }
+.flyerRow .complexBox {
+    /*margin: 5px;*/
+    width: 90%;
+    margin-left: 10%;
+
+    margin-bottom: 10px;
+}
+.flyerRow .complexType {
+    float: left;
+    width: 115px;
+    margin-left: 25px;
+    text-transform: initial;
+}
+.flyerDay .dayName {
+    position: absolute;
+    /* margin: 0 auto; */
+    margin-left: 14cm;
+    font-size: 60pt;
+    margin-top: 17cm;
+    color: #8e8e8e85;
+    z-index: 1;
+    /* bottom: 0; */
+}
+.typeSvg {
+    position: absolute;
+    margin-left: 37px;
+}
+
+.complexBox .complexTypeSvg {
+    position: absolute;
+}
+#slogan {
+    font-size: 37pt;
+    /* margin: 20px; */
+    /* margin-left: 30px; */
+    /* margin-top: -5px; */
+    float: left;
+    /* text-align: center; */
+    /* padding-left: 130px; */
+    width: 50%;
+    color: #f9ba00;
+    font-family: 'BlackRoseSwash',serif;
+    text-shadow: 2px 2px 2px black;
+    /* box-shadow: inset 0px 0px 37px -2px black; */
+    border-radius: 20px 0;
+    /* padding: 25px; */
+    /* background-color: #00000029; */
+    margin-bottom: 47px;
+    padding-top: 6px;
+}
+#logoBox
+{
+    width: 10%;
+    /* width: 0; */
+    /* height: 100px; */
+    /* background-color: yellow; */
+    float: left;
+    margin-left: 17px;
+    /* margin-right: -21px; */
+    margin-top: -8px;
+    /* float: left; */
+    position: absolute;
+    /* display: none; */
+}
+.printOrderInfo {
+    float: left;
+    /*margin-top: 35px;*/
+    width: 50%;
+}
+
+.dishCategory {
+    float: left;
+}
+.dishProducts {
+    /*width: 20%;*/
+    /*float: left;*/
+}
+.dishNameProducts {
+    font-size: 10px;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+.products {
+    font-size: 8px;
+    padding: 0 3px;
+}
+.dishCategoryRow
+{
+    width: 25%;
+    float: left;
+}
+.flyerRow.type .dishBox {
+
+    margin: 0;
+    font-size: 14px;
+    width: 100%;
+
+}
+.flyerRow.type {
+
+    width:100%;
+
+}
+.complex-name {
+    font-size: 14pt;
+    text-transform: uppercase;
+    float: left;
+    width: 80%;
+    font-weight: bold;
+}
+
+.complex-price {
+    font-size: 14pt;
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.colour-1 {
+    color: #FF9200!important;
+}
+.colour-2 {
+    color: #A65F00!important;
+}
+.colour-3 {
+    color: #6A0AAB!important;
+}
+.colour-4 {
+    color: #29ab0a!important;
+}
+.colour-5 {
+    color: #d5853f!important;
+}.colour-6 {
+    color: tomato!important;
+}
+
+.complex-type-box {
+    float: left;
+    width: 100%;
+}
+.complex-type {
+    float: left;
+}
+.complex-type-comment {
+    float: right;
+}
+.flyerRow p
+{
+    font-size: 16px;
+    text-align: justify;
+    text-transform: none;
+}.flyerRow h2
+{
+    text-transform: uppercase;
+     text-align: center;
+}.flyerRow h3
+{
+    text-align: center;
+}.flyerRow h4
+{
+    text-align: center;
+}
+.ComplexChoseBox {
+    float: left;
+    width: 9.33%;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+    height: 9.5mm;
+    line-height: 9.5mm;
+    border-radius: 15px 0;
+    /* font: 14px yelow; */
+    font-size: x-large;
+    margin-left: 10px;
+    background-color: cornsilk;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.ComplexesChoseBox
+{
+    height: 11.5mm;
+    width: 297mm;
+/* border: 1px solid; */
+    margin: 0 auto;
+}

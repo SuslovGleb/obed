@@ -1,0 +1,138 @@
+@media print {
+
+    a[href]:after {
+        content: "";
+    }
+    input.form-control.input-number.dishInputNum {
+        font-size: 12pt;
+    }
+    .printContain .disorderTable
+    {
+        width: 100%;
+        page-break-after: always;
+
+    }
+    .printContain .disorderTable:last-child
+    {
+        width: 100%;
+        page-break-after: auto;
+    }
+    td.dishType {
+        background-color: darkseagreen!important;
+    }
+    .wrap > .container {
+        /*padding: 0;*/
+        padding-top: 0px;
+    }
+    /*.print{*/
+    /*display: initial;*/
+    /*}*/
+    .disorderActions {
+        display: none!important;
+        visibility: hidden!important;
+    } .btn-number {
+        display: none!important;
+        visibility: hidden!important;
+    }
+    footer.footer{
+        display: none!important;
+        visibility: hidden!important;
+    }
+    div#yii-debug-toolbar {
+        display: none!important;
+        visibility: hidden!important;
+    }
+    .print:not{
+        display: none!important;
+        visibility: hidden!important;
+    }
+}
+
+.alignCenter{
+    text-align: center;
+}
+.alignLeft{
+    text-align: left;
+}
+.alignRight{
+    text-align: right;
+}
+
+div#ui-datepicker-div {
+    z-index: 11!important;
+}
+.datePickerBlock {
+    margin: 0 auto;
+    /* position: relative; */
+    width: 100px;
+}
+.datePickerBlock input {
+    border: none;
+    font-size: 22pt;
+    cursor: pointer;
+    /* margin: 0 auto; */
+    width: 148px;
+    outline: none;
+}
+
+tr.itogotable {
+    background-color: unset!important;
+    border-top: 3px solid black!important;
+    font-size: 14pt;
+    font-weight: bold;
+}
+td.dishType
+{
+    background-color: darkseagreen;
+}
+.dishBuyCount
+{
+    width: 61px;
+    /* float: left; */
+    /* margin-left: 25%; */
+    margin: 0 auto;
+    width: 65px;
+}
+table.disorderTable {
+    width: 55%;
+    margin: 0 auto;
+}
+.btn-number
+{
+    height: 19px;
+    width: 19px;
+}
+
+
+table.flagReturn {
+    background-color: darksalmon;
+}
+.dishBtnMinus {
+    padding: 0;
+    color: black;
+    background-color: #b5b5b5;
+    border: none;
+    font-size: 6pt;
+    /* border-radius: 50% 0 0 50%; */
+    outline: none!important;
+}
+.dishInputNum
+{
+    padding: 0;
+    height: 19px;
+    font-size: 14pt;
+    border: none;
+    text-align: center;
+    outline: none!important;
+}
+.dishBtnPlus
+{
+
+    padding: 0;
+    color: black;
+    background-color: #b5b5b5;
+    border: none;
+    font-size: 6pt;
+    /* border-radius: 0 50% 50% 0; */
+    outline: none!important;
+}

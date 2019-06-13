@@ -1,0 +1,318 @@
+.blue
+{
+    background-color: #337ab7;
+}
+.ComplexImageSaveBtn {
+    float: right;
+    font-size: 14pt;
+    cursor: pointer;
+}
+.ComplexImageSaveBtn:hover
+{
+    color: #0b93d5;
+}
+
+.input-check {
+    display: inline-block;
+    *display: inline; /* inline-block ie7 fix */
+    *zoom: 1;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+}
+.input-check input {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+}
+.input-check label {
+    font-size: 14px;
+    line-height: 22px;
+    display: block;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    height: 19px;
+}
+.input-check label:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 14px;
+    height: 15px;
+    margin-top: -7px;
+    /*background: rgba(0, 0, 0, 0) url(@app/modules/Complexes/web/images/checkbox_RedGreen.png) no-repeat;*/
+    z-index: 5;
+    content: '';
+}
+.input-check input:checked + label:before {
+    background-position: 0 -13px;
+}
+.addDishToComplexFromTabs {
+    line-height: 20px;
+    cursor: pointer;
+}
+.addDishToComplexFromTabs:hover
+{
+    background-color: wheat;
+}
+.complexDishName
+{
+    margin-left: 20px;
+}
+.table > tbody > tr > td
+{
+    line-height: 35px;
+}
+td, th {
+    padding: 0;
+    text-align: center;
+}
+.selectsBox
+{
+    line-height: 100px;
+    font-size: 14pt;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 35px;
+    opacity: 0.5;
+    background-color: #5cb85c;
+}
+.selectsBox.thisNotActive
+{
+
+    cursor: not-allowed;
+    opacity: 0.5;
+    display:none;
+}
+.selectsBox.thisNotActive label
+{
+    cursor: not-allowed;
+}
+.selectsBox.thisNotActive .input-check
+{
+    cursor: not-allowed;
+}
+.selectsBox.thisActive
+{
+
+    opacity: 1;
+}
+.selectsBox.thisActive label
+{
+    cursor: pointer;
+}
+.selectsBox.thisActive .input-check
+{
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+.ComplexBox input[type=number]
+{
+    width: 100px;
+}
+.ComplexBox input {
+    margin-left: 120px;
+    margin-bottom: 5px;
+
+    max-width: 250px;
+    float: left;
+}.ComplexBox select {
+     margin-left: 120px;
+     margin-bottom: 5px;
+     max-width: 340px;
+ }
+.ComplexBox {
+    width: 500px;
+    /* padding: 50px; */
+    background-color: #ecffed;
+    border: 1px solid #0a800a;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    float: left;
+}
+.ComplexBox label {
+    /* float: left; */
+    position: absolute;
+    line-height: 34px;
+    width: 110px;
+    text-align: right;
+}
+.ComplexBox .form-group.addDish {
+    float: left;
+}
+
+.DishesBox input[type=number]
+{
+    width: 100px;
+}
+.DishesBox input {
+    margin-left: 120px;
+    margin-bottom: 5px;
+
+    max-width: 250px;
+    float: left;
+}.DishesBox select {
+     margin-left: 120px;
+     margin-bottom: 5px;
+     max-width: 340px;
+ }
+.DishesBox {
+    width: 30%;
+    /* padding: 50px; */
+    background-color: #ecffed;
+    border: 1px solid #0a800a;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    float: left;
+    /* left: 524px; */
+    /* position: absolute; */
+    margin-top: -16px;
+}
+.DishesBox label {
+    /* float: left; */
+    position: absolute;
+    line-height: 34px;
+    width: 110px;
+    text-align: right;
+}
+input.Complex_product {
+    /*background-color: #e0e0e0;*/
+    /*border: unset;*/
+    /*box-shadow: unset;*/
+    width: 200px;
+}
+.divBtn {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: #2e8806;
+    /*margin-left: 10px;*/
+    border-radius: 30px;
+    line-height: 29px;
+    font-size: 20px;
+    text-align: center;
+    color: #a5ff86;
+    margin-top: 2px;
+    cursor: pointer;
+    padding-left: 1px;
+    margin-left: 16px;
+    margin-right: -30px;
+}
+.applyDish.glyphicon-remove{
+    background-color: red;
+}
+
+.addOneInputLabel
+{
+    width: 59%;
+    float:  left;
+    text-align:  right;
+    line-height: 35px;
+}
+.productsBox
+{
+    float:  left;
+    width:  100%;
+    text-align:  center;
+    line-height: 23px;
+}
+.ui-widget-content {
+    min-height: 187px;
+    /* max-width: 500px; */
+    color: #222222;
+    overflow: overlay;
+    /* max-height: 164px; */
+    padding: 0;
+    overflow-x: hidden;
+    position: fixed;
+    border-radius: 10px;
+    border: 1px solid #0e6116;
+    /* border: 1px solid #d3d3d3; */
+    top: unset!important;
+    left: 0px!important;
+    /* position: absolute!important; */
+    max-height: 364px!important;
+    width: 100%!important;
+    height: 100%;
+    bottom: 0!important;
+}
+input.Complex_product_weight {
+    width: 70px;
+}
+.DishesByDay
+{
+
+    float:  left;
+    /*margin-left: 33%;*/
+    margin-top: 15px;
+}
+
+
+.DishesByDay .type_name
+{
+    background-color: khaki;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+    padding-left: 39px;
+    height: 50px;
+    line-height: 41px;
+
+}
+.DishesByDay  .type_weight
+{
+    float:  right;
+    margin-right: 50px;
+}
+.DishesByDay  .dishBuyCount
+{
+    width: 65px!important;
+    float: right;
+}.DishesByDay  .input-number
+{
+     width: 26px!important;
+     margin: 0;
+}
+.DishesByDay .complexType.disabled
+{
+    /*filter: grayscale(100%);*/
+    cursor: not-allowed;
+    background-color:  grey;
+}
+.complexType.disabled .addDishToComplexFromTabs {
+    color: whitesmoke;
+    display: none;
+    cursor: not-allowed;
+}.complexType.disabled .addDishToComplexFromTabs:hover {
+    background-color: unset;
+
+}
+.complexType.disabled .type_name {
+    color: whitesmoke;
+    background-color:  grey;
+}
+.complexType.disabled .type_weight {
+
+    display: none;
+}
+.complexType.disabled .input-check {
+    display: none;
+}
